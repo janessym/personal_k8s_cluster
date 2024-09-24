@@ -1,2 +1,5 @@
 resources:
 - ../base
+- ../argocd
+- ../jenkins
+- ../prometheus-grafana-stack
