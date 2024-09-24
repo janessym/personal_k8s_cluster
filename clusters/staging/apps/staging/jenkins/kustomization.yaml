@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+#kubernetes resources to be managed by kustomize
+resources:
+  - jenkins-deployment.yaml
+  - jenkins-ingress.yaml
+  - jenkins-namespace.yaml
+  - jenkins-pvc.yaml
+  - jenkins-svc.yaml

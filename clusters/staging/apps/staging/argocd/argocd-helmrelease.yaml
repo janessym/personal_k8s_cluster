@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: argocd
+  namespace: argocd
+spec:
+  interval: 10m
+  chart:
+    spec:
+      chart: ./argocd-install/argo-cd  # Path to the Helm chart in the Git repository
+      sourceRef:
+        kind: GitRepository
+        name: argocd
+      version: 1.0.0  # Specify the chart version if necessary
+  values:
+    # Customize your values here if needed
+    server:
+      service:
+        type: NodePort
