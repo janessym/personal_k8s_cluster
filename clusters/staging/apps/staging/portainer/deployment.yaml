@@ -20,4 +20,4 @@ spec:
             - containerPort: 9000
           args:
             - "--admin-password"
-            - "$2y$05$E/rlp/FGRfktYeUSmTZArejZxrVVp3FDt8UJqCOLFsjJzttgKHSSG"  # Replace with a secure password
+            - "$2y$05$/uebZ2uKZZWTlPrJ6CnEzOQkDqEhDZi5bsE/gv94ovlQ9wU7ZuEyS"  # Replace with a secure password
