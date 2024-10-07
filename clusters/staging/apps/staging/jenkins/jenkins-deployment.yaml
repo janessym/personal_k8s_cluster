@@ -26,6 +26,13 @@ spec:
           ports:
             - containerPort: 8080
             - containerPort: 50000
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "512Mi"
+            limits:
+              cpu: "1"
+              memory: "1Gi"
           volumeMounts:
             - name: jenkins-home
               mountPath: /var/jenkins_home
@@ -33,3 +40,4 @@ spec:
         - name: jenkins-home
           persistentVolumeClaim:
             claimName: jenkins-pvc
+      
